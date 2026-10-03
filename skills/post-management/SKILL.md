@@ -5,7 +5,7 @@ description: "List, read, draft, edit, schedule, publish, retry and discard soci
 
 # post-management
 
-Posts have a status: DRAFT, PENDING_APPROVAL, SCHEDULED, PUBLISHED, FAILED. Create drafts with create_post (action "draft") unless the user clearly asks to schedule or publish. schedule_post and publish_post_now go out to a real social account: only call them when the user has explicitly asked, and report quota or compliance blocks to the user as they are. Instagram posts need an image.
+Posts have a status: DRAFT, PENDING_APPROVAL, SCHEDULED, PUBLISHED, FAILED. Create drafts with create_post (action "draft") unless the user clearly asks to schedule or publish. schedule_post and publish_post_now go out to a real social account: only call them when the user has explicitly asked, and report quota or compliance blocks to the user as they are. Instagram posts need an image. Before scheduling or publishing a LinkedIn post, ask the user whether it should go out on their personal profile or on one of their company pages (the page names are in list_accounts under linkedinOrganizations). Do not choose for them. If the account has no company pages, post as the personal profile and do not ask. "Approve" on its own does not mean publish now: ask whether to schedule (and for when) or publish immediately.
 
 ## Tools (from the `vedxai` MCP server)
 
