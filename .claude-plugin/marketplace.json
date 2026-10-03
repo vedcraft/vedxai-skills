@@ -1,0 +1,11 @@
+{
+  "name": "vedxai",
+  "owner": { "name": "Vedcraft" },
+  "plugins": [
+    {
+      "name": "vedxai-social",
+      "source": "./",
+      "description": "Manage social media with VedXAI: posts, drafts, content, usage."
+    }
+  ]
+}
