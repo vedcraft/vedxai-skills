@@ -6,13 +6,13 @@ Skills: automations, brand, compliance, connectors, content-creation, documents,
 
 ## You need
 
-1. `VEDXAI_MCP_URL`: the VedXAI MCP server URL (ends in `/mcp`).
-2. `VEDXAI_TOKEN`: a personal token (`vxm_...`) from VedXAI Settings > Chat assistant. It carries your own plan and limits and can be revoked there.
+1. `VEDXAI_TOKEN`: a personal token (`vxm_...`) from VedXAI Settings > Chat assistant. It carries your own plan and limits and can be revoked there.
 
 ```
-export VEDXAI_MCP_URL="https://<server>/mcp"
 export VEDXAI_TOKEN="vxm_..."
 ```
+
+The server URL defaults to `https://mcp.vedxai.com/mcp`. Set `VEDXAI_MCP_URL` only to point at another server (local or staging).
 
 ## Install
 
@@ -26,7 +26,7 @@ npx skills add vedcraft/vedxai-skills --skill post-management   # one skill
 This installs the SKILL.md guidance only. Also add the MCP server:
 
 ```
-claude mcp add --transport http vedxai "$VEDXAI_MCP_URL" --header "Authorization: Bearer $VEDXAI_TOKEN"
+claude mcp add --transport http vedxai "${VEDXAI_MCP_URL:-https://mcp.vedxai.com/mcp}" --header "Authorization: Bearer $VEDXAI_TOKEN"
 ```
 
 **Claude Code plugin (skills and MCP connection together)**
@@ -36,13 +36,13 @@ claude mcp add --transport http vedxai "$VEDXAI_MCP_URL" --header "Authorization
 /plugin install vedxai-social@vedxai
 ```
 
-**Claude Cowork**: add `VEDXAI_MCP_URL` as a custom connector with the bearer token, and upload the `skills/*` folders as skills. Menu names differ by version.
+**Claude Cowork**: add `https://mcp.vedxai.com/mcp` as a custom connector with the bearer token, and upload the `skills/*` folders as skills. Menu names differ by version.
 
 **Codex**: copy `skills/*` into your Codex skills folder and add to `config.toml`:
 
 ```toml
 [mcp_servers.vedxai]
-url = "<VEDXAI_MCP_URL>"
+url = "https://mcp.vedxai.com/mcp"
 bearer_token_env_var = "VEDXAI_TOKEN"
 ```
 

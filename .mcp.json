@@ -2,7 +2,7 @@
   "mcpServers": {
     "vedxai": {
       "type": "http",
-      "url": "${VEDXAI_MCP_URL}",
+      "url": "${VEDXAI_MCP_URL:-https://mcp.vedxai.com/mcp}",
       "headers": {
         "Authorization": "Bearer ${VEDXAI_TOKEN}"
       }
