@@ -1,4 +1,4 @@
-# VedXAI skills
+# VedXAI Skills
 
 Let your AI assistant manage your social media through [VedXAI](https://vedxai.com): list and write posts, schedule and publish, check insights, and more. This repo holds the skills (instructions for the assistant) and the connection to the VedXAI MCP server. It works with Claude Code, Claude Cowork and Codex.
 
