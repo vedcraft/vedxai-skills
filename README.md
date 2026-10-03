@@ -79,6 +79,6 @@ These tools act on your real social accounts under your own plan and role. Tools
 | A skill mentions a tool you cannot see | The server hides tools your plan or feature flags do not allow. |
 | No tools at all | The assistant feature is not enabled on your account. |
 
-## License and notices
+## Notices
 
 See `THIRD_PARTY_NOTICES.md`.
