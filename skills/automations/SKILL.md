@@ -5,7 +5,7 @@ description: "Recurring automations that turn blog or feed content into schedule
 
 # automations
 
-An automation runs on a cron schedule, takes content from a source (WordPress, RSS, Medium, Ghost) and creates posts. publishMode AUTO publishes without a human review, so confirm the details with the user before creating or enabling one. Plan limits cap how many automations exist and how often they run: if creating one is refused, tell the user why. Deleting an automation, or setting up a new content source, is done in the browser (Settings > Connectors).
+An automation runs on a cron schedule, takes content from a source (WordPress, RSS, Medium, Ghost) and creates posts. publishMode AUTO publishes without a human review, so confirm the details with the user before creating or enabling one. A FACEBOOK target (Advanced plans) only ever produces drafts: even in AUTO mode the user reviews and confirms Facebook posts in the portal, so say so. Plan limits cap how many automations exist and how often they run: if creating one is refused, tell the user why. Deleting an automation, or setting up a new content source, is done in the browser (Settings > Connectors).
 
 ## Tools (from the `vedxai` MCP server)
 
