@@ -5,7 +5,7 @@ description: "Create post drafts from a link (Content Studio) or write quick pos
 
 # content-creation
 
-To generate posts from an article link, call create_content_job (the same pipeline as Content Studio: brand voice, source checks and compliance screening). It starts a job and returns a jobId; drafts appear later in Posts, some may wait for approval after compliance screening. Tell the user the job started and to ask for its status later. Do not poll get_job in the same turn. Pass the platform the user named in channels; if they named none, ask which. compose_post is only for quick suggested text or a rewrite when there is no link; it returns text and saves nothing. To keep that text, call create_post from the post-management skill. Advanced plans only.
+To generate posts from an article link, call create_content_job (the same pipeline as Content Studio: brand voice, source checks and compliance screening). It starts a job and returns a jobId; drafts appear later in Posts, some may wait for approval after compliance screening. Tell the user the job started and to ask for its status later. Do not poll get_job in the same turn. Pass the platform the user named in channels; if they named none, ask which. compose_post is only for quick suggested text or a rewrite when there is no link; it returns text and saves nothing. To keep that text, call create_post from the post-management skill. Advanced plans only. To get the X draft as a thread (Advanced plan, X among the channels), pass threadParts between 2 and 5; the result is one draft whose posts are separated by --- and which can be reviewed and published as a thread from the portal or with create_post/schedule_post.
 
 ## Tools (from the `vedxai` MCP server)
 
