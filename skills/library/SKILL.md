@@ -5,7 +5,7 @@ description: "The content library: sources the user has brought in for generatin
 
 # library
 
-Read-only view of the content library. To add content, the user uses the browser.
+Read-only view of the older saved-sources list (the Content Library, now hidden in the app; uploaded files live in the Document Library, see the documents skill). To add content, the user uses the browser.
 
 ## Tools (from the `vedxai` MCP server)
 

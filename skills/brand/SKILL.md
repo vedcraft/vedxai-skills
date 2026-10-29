@@ -5,7 +5,7 @@ description: "The user's brand voice and preferences, and the active brand spec 
 
 # brand
 
-Preferences (tone, audience, guidelines) shape every generated post. Changing them affects future posts, so say what you changed. get_brand_spec shows the active brand spec and cannot change it: editing, approving or activating a brand spec is done in the Brand hub in the browser.
+Preferences (tone, audience, guidelines) shape every generated post. Changing them affects future posts, so say what you changed. get_brand_spec shows the active brand spec and cannot change it: editing, approving or activating a brand spec is done in the Brand hub in the browser. A first brand guide can be drafted there from the user's website, documents and pasted posts with "Build it with AI" (monthly allowance, reviewed item by item); generated posts use the active brand spec automatically.
 
 ## Tools (from the `vedxai` MCP server)
 

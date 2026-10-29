@@ -5,7 +5,7 @@ description: "Check post text for compliance before publishing, and review posts
 
 # compliance
 
-check_compliance is advisory and changes nothing. Run it on text before scheduling or publishing when the user asks, and report findings plainly. Feature availability differs by account: if a check is not available, say so. Reviewing a post in the compliance queue is a decision with a record: only do it when asked.
+check_compliance is advisory and changes nothing. Run it on text before scheduling or publishing when the user asks, and report findings plainly. Feature availability differs by account: if a check is not available, say so. Reviewing a post in the compliance queue is a decision with a record: only do it when asked. If a publish is refused because the post needs compliance review, say so plainly and that approving the review is a separate step; after a review is approved the post is still not published until the user asks to publish or schedule it.
 
 ## Tools (from the `vedxai` MCP server)
 
