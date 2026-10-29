@@ -1,11 +1,11 @@
 ---
 name: documents
-description: "Uploaded documents and the content generated from them. Use when the user asks about their uploaded documents or making posts from a document."
+description: "Documents in the user's Document Library and the content generated from them. Use when the user asks about their uploaded documents or making posts from a document."
 ---
 
 # documents
 
-Documents are uploaded in the browser (Content Studio); here you can list them, read one and start generating post drafts from it. generate_from_document uses one AI generation from the quota and creates drafts only. Re-ingesting or editing a document is done in the browser.
+Documents are uploaded in the browser (Brand & Docs > Document Library, or Content Studio); here you can list them, read one and start generating post drafts from it. generate_from_document uses one AI generation from the quota and creates drafts only. Re-ingesting or editing a document is done in the browser.
 
 ## Tools (from the `vedxai` MCP server)
 
